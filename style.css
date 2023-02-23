@@ -357,7 +357,9 @@ body {
     font-family: pageFont;
     display:grid;
     grid-template-columns: 1fr 5fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    background-color: blanchedalmond;
+    color:rgb(149, 86, 23);
 }
 
 a {
@@ -374,7 +376,15 @@ a:visited {
     display:grid;
     grid-template-rows: repeat(6, 2em);
     padding-left: 3em;
+    padding-right:3em;
     padding-top: 3em;
+    gap: 8px;
+}
+
+.navlink{
+    background-color: rgba(213, 173, 72, 0.607);
+    font-weight: bolder;
+    padding: 8px;
 }
 
 .topbar {
@@ -395,16 +405,122 @@ a:visited {
 
 .rightbar {
     grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.rightbar2{
+  display: flex;
+  flex-direction: column;
+}
+
+.reminders {
+    padding-left: 1em;
 }
 
 .rightbar, .rightbar2 {
-    padding-left: 3em;
+    padding-left: 2em;
 }
 
 .proj {
+    position: relative;
     border: 4px;
-    border-color: black;
+    border-color:rgb(213, 173, 72);
     border-style: solid;
     padding:8px;
     height: 250px;
+    border-radius: 15%;
+}
+
+#recipe, #landingpage, #etch, #rps, #calc, #signup {
+    position:relative;
+    border: 4px;
+    border-color:rgb(213, 173, 72);
+    border-style: solid;
+}
+
+#recipe::before {
+    border-radius: inherit;
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top: 135px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    opacity: 55%;
+    background-image: url("https://assets.bonappetit.com/photos/5ea982d4eb758a0008622bee/master/w_1600%2Cc_limit/HR-Shin-Ramen-Inline.jpg");
+}
+
+#landingpage::before{
+    background-image: url("landingpage.png");
+    border-radius: inherit;
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top: 135px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    opacity: 55%;
+}
+
+#rps::before{
+    background-image: url("rps.png");
+    border-radius: inherit;
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top: 135px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    opacity: 55%;
+}
+
+#etch::before{
+    background-image: url("etch.png");
+    border-radius: inherit;
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top: 135px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    opacity: 55%;
+}
+
+#calc::before{
+    background-image: url("calc.png");
+    border-radius: inherit;
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top: 135px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    opacity: 55%;
+}
+
+#signup::before{
+    background-image: url("signup.png");
+    border-radius: inherit;
+    content:"";
+    position:absolute;
+    background-size: cover;
+    top: 135px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    opacity: 55%;
+}
+
+h4, p {
+    position: relative;
+}
+
+h4 {
+    color:rgb(149, 86, 23);
 }
